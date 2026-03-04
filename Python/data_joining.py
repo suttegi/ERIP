@@ -37,7 +37,7 @@ if __name__ == '__main__':
     joined_data_frame = joined_data_frame.merge(buttons, how='left', on=("RunTime", "RunDate"))
     joined_data_frame = joined_data_frame.merge(items, how='left', on=("RunTime", "RunDate"))
 
-    print(items)
+    print("<3 items: " + items)
 
     run_dates = joined_data_frame["RunDate"].unique()
     run_durations = joined_data_frame["RunDate"].value_counts()
